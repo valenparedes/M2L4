@@ -1,0 +1,33 @@
+@keyframes color-change {
+    0% {
+        color: blue;
+    }
+  
+    50% {
+        color: red;
+    }
+  
+    100% {
+        color: blue;
+    }
+}
+
+@keyframes jump {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+h1:hover {
+    animation: jump 0.5s ease, color-change 3s infinite;
+}
+
+p {
+    animation: color-change 3s infinite;
+}
